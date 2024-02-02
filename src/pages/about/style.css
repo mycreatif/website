@@ -1,0 +1,12 @@
+.logo-about {
+  width: 60px;
+  height: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  .logo-about {
+    width: 30px;
+    height: 50px;
+    margin-top: 20px;
+  }
+}

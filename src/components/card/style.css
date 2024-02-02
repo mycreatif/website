@@ -1,0 +1,138 @@
+.zoom {
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+
+  font-family: "Roboto", sans-serif;
+  color: #590fb7;
+  font-size: 20px;
+  background: transparent;
+  cursor: pointer;
+  padding: 10px;
+  border: solid #590fb7 1px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  width: 213px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 0px #590fb7;
+  -moz-box-shadow: 0px 0px 0px #590fb7;
+  box-shadow: 0px 0px 0px #590fb7;
+  margin: 7px;
+}
+
+.zoom:hover {
+  text-decoration: none;
+  -webkit-box-shadow: 6px 6px 0px #590fb7;
+  -moz-box-shadow: 6px 6px 0px #590fb7;
+  box-shadow: 6px 6px 0px #590fb7;
+  transform: scale(1.01);
+}
+
+.card:hover h3 {
+  color: #fff;
+}
+
+.container {
+  align-self: center;
+}
+
+.img {
+  width: 220px;
+  border-radius: 4px;
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.simpleCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #590fb7;
+  border-radius: 8px;
+  padding: 30px 60px;
+  max-width: 150px;
+  background-color: white;
+  width: 120px;
+}
+
+.testimonyCard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #590fb7;
+  border-radius: 8px;
+  padding: 30px;
+  /* width: 550px; */
+  color: #212427;
+}
+
+.pricing {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  color: #590fb7;
+  font-size: 30px;
+  text-align: center;
+}
+
+.pricing span {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.card-fixed {
+  border: 1px solid #590fb7;
+  border-radius: 8px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  -webkit-box-shadow: 10px 10px 0px #590fb7;
+  -moz-box-shadow: 10px 10px 0px #590fb7;
+  box-shadow: 10px 10px 0px #590fb7;
+  transition: all 0.2s ease-in-out;
+  background-color: white;
+  margin-right: 10px;
+  text-align: left;
+}
+
+.promoCard {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.small {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 150px;
+}
+
+@media screen and (max-width: 600px) {
+  .zoom {
+    width: 140px;
+    /* min-height: 260px; */
+  }
+
+  .zoom:hover {
+    text-decoration: none;
+    -webkit-box-shadow: 6px 6px 0px #590fb7;
+    -moz-box-shadow: 6px 6px 0px #590fb7;
+    box-shadow: 6px 6px 0px #590fb7;
+    transform: scale(1);
+    margin: 0;
+  }
+
+  .small {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+}

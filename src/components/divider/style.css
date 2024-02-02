@@ -1,0 +1,27 @@
+.dividerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0 0 0;
+}
+
+.dividerContainerSmall {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 0 0;
+}
+
+.dividerLine {
+  width: 40%;
+  height: 1px;
+  background-color: #590fb7;
+}
+
+.dividerLineSmall {
+  width: 20%;
+  height: 1px;
+  background-color: #590fb7;
+}

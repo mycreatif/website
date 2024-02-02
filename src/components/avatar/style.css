@@ -1,0 +1,25 @@
+.avatarContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 100px;
+  max-height: 100px;
+}
+
+.avatarTitle {
+  font-size: 1em;
+  margin: 0.3em 0 -0.2em 0;
+  display: inline-block;
+  color: #590fb7;
+}
+.avatarSubtitle {
+  font-size: 0.8em;
+  display: inline-block;
+  font-weight: 100;
+  color: #590fb7;
+}

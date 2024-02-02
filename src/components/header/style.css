@@ -1,0 +1,123 @@
+a {
+  text-decoration: none;
+  color: #590fb7;
+}
+
+.logo {
+  padding: 10px;
+}
+
+.site-header {
+  /* padding: 0.5em 1em; */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  animation: enhance-header linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 0 200px;
+}
+
+@keyframes enhance-header {
+  to {
+    backdrop-filter: blur(5px);
+    /* width: 90vw;
+    translate: -400px 0; */
+  }
+}
+
+.site-identity h1 {
+  font-size: 1.5em;
+  margin: 0.6em 0;
+  display: inline-block;
+}
+
+.site-navigation ul,
+.site-navigation li {
+  margin: 0;
+  padding: 0;
+}
+
+.site-navigation li {
+  display: inline-block;
+  margin: 1.4em 1em 1em 1em;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.mobile-cart {
+  display: none;
+  font-size: 1.5em;
+  margin: -0.2em 0 0 0;
+  color: #590fb7;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.web-cart {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .site-header {
+    flex-direction: column;
+    align-items: center;
+    /* padding: 0 10px; */
+    background: white;
+    /* margin: -20px -10px; */
+    /* width: 100dvw; */
+    border-bottom: 1px solid #590fb7;
+    margin-bottom: 1em;
+  }
+  .site-navigation {
+    /* margin-top: 1em; */
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .active {
+    display: block;
+    position: absolute;
+
+    margin: 0;
+    top: 60px;
+    padding: 10px 30px;
+    border-bottom: 1px solid #590fb7;
+    background: white;
+  }
+
+  .site-navigation li {
+    display: block;
+    text-align: left;
+  }
+  .site-identity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .site-identity h1 {
+    margin: 0.2em 0;
+  }
+  .menu-toggle {
+    display: block;
+    font-size: 1.5em;
+    margin: 0.2em 0;
+    cursor: pointer;
+    color: #590fb7;
+    padding: 0 10px;
+  }
+  .mobile-cart {
+    display: block;
+  }
+  .web-cart {
+    display: none;
+  }
+}

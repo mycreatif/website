@@ -1,0 +1,16 @@
+.godown {
+  margin: 0;
+  padding: -10px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+  translate: 0 -200px;
+}
+
+.icon {
+  width: 200px;
+  height: 200px;
+  font-size: 60px;
+}
