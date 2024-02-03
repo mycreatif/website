@@ -8,7 +8,7 @@ import "swiper/css";
 
 const App = () => {
   return (
-    <APIProvider apiKey={"AIzaSyCmTwL0R0hEc7sncY65IMsyc0QsKbXpc80"}>
+    <APIProvider apiKey={""}>
       <RouterProvider router={router} />
     </APIProvider>
   );
